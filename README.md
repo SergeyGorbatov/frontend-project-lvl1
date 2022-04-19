@@ -6,3 +6,6 @@
 
 ### Check Linter:
 [![CheckLinter](https://github.com/SergeyGorbatov/frontend-project-lvl1/workflows/CheckLinter/badge.svg)](https://github.com/SergeyGorbatov/frontend-project-lvl1/actions/workflows/CheckLinter.yml)
+
+### Game Even:
+[![asciicast](https://asciinema.org/a/ZeThrts8PN8q0e0gHB9UINdzv.svg)](https://asciinema.org/a/ZeThrts8PN8q0e0gHB9UINdzv)
