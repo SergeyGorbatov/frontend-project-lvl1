@@ -9,3 +9,6 @@
 
 ### Game Even:
 [![asciicast](https://asciinema.org/a/ZeThrts8PN8q0e0gHB9UINdzv.svg)](https://asciinema.org/a/ZeThrts8PN8q0e0gHB9UINdzv)
+
+### Game Calc:
+[![asciicast](https://asciinema.org/a/hmoe3ALHtDtEoTBkOVxh9Z1DL.svg)](https://asciinema.org/a/hmoe3ALHtDtEoTBkOVxh9Z1DL)
