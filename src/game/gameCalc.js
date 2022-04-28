@@ -14,8 +14,8 @@ const round = () => {
       return n1 * n2;
     } return console.log('Unknown sign');
   };
-  const getRandomInt = randomInt(1, 100);
-  const getRandomInt2 = randomInt(1, 100);
+  const getRandomInt = randomInt(0, 100);
+  const getRandomInt2 = randomInt(0, 100);
   const askQuestion = `Question: ${getRandomInt} ${randomSign} ${getRandomInt2}`;
   const correctAnswer = String(calculateTheExpression(getRandomInt, getRandomInt2));
   return [correctAnswer, askQuestion];
