@@ -12,3 +12,6 @@
 
 ### Game Calc:
 [![asciicast](https://asciinema.org/a/hmoe3ALHtDtEoTBkOVxh9Z1DL.svg)](https://asciinema.org/a/hmoe3ALHtDtEoTBkOVxh9Z1DL)
+
+### Game Greatest Common Divisor (GCD):
+[![asciicast](https://asciinema.org/a/bn1ISMZN1DI8WDcLboOExKQyt.svg)](https://asciinema.org/a/bn1ISMZN1DI8WDcLboOExKQyt)
