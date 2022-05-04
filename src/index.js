@@ -21,7 +21,7 @@ export const games = (gameRules, round) => {
     if (getAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      return console.log(`${getAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.
+      return console.log(`'${getAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
 Let's try again, ${userName}!`);
     }
   }
