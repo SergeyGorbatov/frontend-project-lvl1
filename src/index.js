@@ -25,5 +25,5 @@ export const games = (gameRules, round) => {
 Let's try again, ${userName}!`);
     }
   }
-  return console.log(`Congratulations, ${userName}`);
+  return console.log(`Congratulations, ${userName}!`);
 };
