@@ -15,3 +15,6 @@
 
 ### Game Greatest Common Divisor (GCD):
 [![asciicast](https://asciinema.org/a/bn1ISMZN1DI8WDcLboOExKQyt.svg)](https://asciinema.org/a/bn1ISMZN1DI8WDcLboOExKQyt)
+
+### Game Arithmetic progression:
+[![asciicast](https://asciinema.org/a/ORLNtuhpmbaRq9dcAeX1fwy3a.svg)](https://asciinema.org/a/ORLNtuhpmbaRq9dcAeX1fwy3a)
