@@ -18,3 +18,6 @@
 
 ### Game Arithmetic progression:
 [![asciicast](https://asciinema.org/a/ORLNtuhpmbaRq9dcAeX1fwy3a.svg)](https://asciinema.org/a/ORLNtuhpmbaRq9dcAeX1fwy3a)
+
+### Game "Is it a prime number?":
+[![asciicast](https://asciinema.org/a/XK0gTA8kwQ0ap93RdUYDathYN.svg)](https://asciinema.org/a/XK0gTA8kwQ0ap93RdUYDathYN)
