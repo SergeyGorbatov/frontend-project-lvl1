@@ -11,7 +11,7 @@ const calculateExpression = (n1, randomSign, n2) => {
     case '*':
       return n1 * n2;
     default:
-      return console.log('Unknown sign');
+      return console.log(`Unknown ${randomSign} sign`);
   }
 };
 
