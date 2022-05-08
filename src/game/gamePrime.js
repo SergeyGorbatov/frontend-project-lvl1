@@ -1,4 +1,4 @@
-import { randomInt, games } from '../index.js';
+import { getRandomInt, getGames } from '../index.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -15,15 +15,15 @@ const getRemainder = (number) => {
   return result;
 };
 
-const round = () => {
-  const getRandomInt = randomInt(0, 100);
-  const askQuestion = `Question: ${getRandomInt}`;
-  const correctAnswer = getRemainder(getRandomInt) ? 'yes' : 'no';
-  return [correctAnswer, askQuestion];
+const getRound = () => {
+  const randomInt = getRandomInt(0, 100);
+  const question = `Question: ${randomInt}`;
+  const correctAnswer = getRemainder(randomInt) ? 'yes' : 'no';
+  return [correctAnswer, question];
 };
 
-const gameEven = () => {
-  games(gameRules, round);
+const startGameEven = () => {
+  getGames(gameRules, getRound);
 };
 
-export default gameEven;
+export default startGameEven;

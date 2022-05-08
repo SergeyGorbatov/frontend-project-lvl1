@@ -1,28 +1,32 @@
-import { randomInt, games } from '../index.js';
+import { getRandomInt, getGames } from '../index.js';
 
 const gameRules = 'What is the result of the expression?';
 
-const round = () => {
-  const sign = ['+', '-', '*'];
-  const randomSign = sign[randomInt(0, sign.length - 1)];
-  const calculateTheExpression = (n1, n2) => {
-    if (randomSign === '+') {
+const calculateExpression = (n1, randomSign, n2) => {
+  switch (randomSign) {
+    case '+':
       return n1 + n2;
-    } if (randomSign === '-') {
+    case '-':
       return n1 - n2;
-    } if (randomSign === '*') {
+    case '*':
       return n1 * n2;
-    } return console.log('Unknown sign');
-  };
-  const getRandomInt = randomInt(0, 100);
-  const getRandomInt2 = randomInt(0, 100);
-  const askQuestion = `Question: ${getRandomInt} ${randomSign} ${getRandomInt2}`;
-  const correctAnswer = String(calculateTheExpression(getRandomInt, getRandomInt2));
-  return [correctAnswer, askQuestion];
+    default:
+      return console.log('Unknown sign');
+  }
 };
 
-const gameCalc = () => {
-  games(gameRules, round);
+const getRound = () => {
+  const sign = ['+', '-', '*'];
+  const randomSign = sign[getRandomInt(0, sign.length - 1)];
+  const randomInt = getRandomInt(0, 100);
+  const randomInt2 = getRandomInt(0, 100);
+  const question = `Question: ${randomInt} ${randomSign} ${randomInt2}`;
+  const correctAnswer = String(calculateExpression(randomInt, randomSign, randomInt2));
+  return [correctAnswer, question];
 };
 
-export default gameCalc;
+const startGameCalc = () => {
+  getGames(gameRules, getRound);
+};
+
+export default startGameCalc;

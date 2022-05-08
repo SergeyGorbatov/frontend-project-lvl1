@@ -1,10 +1,10 @@
-import { randomInt, games } from '../index.js';
+import { getRandomInt, getGames } from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
-const round = () => {
-  const fixedNumberProgression = randomInt(2, 15);
-  const progressionLength = randomInt(5, 10);
+const getRound = () => {
+  const fixedNumberProgression = getRandomInt(2, 15);
+  const progressionLength = getRandomInt(5, 10);
 
   const result = [];
   let number = 0;
@@ -12,18 +12,18 @@ const round = () => {
     number += fixedNumberProgression;
     result.push(number);
   }
-  const getRandomInt = randomInt(0, result.length - 1);
-  const randomElement = result[getRandomInt];
-  result[getRandomInt] = '..';
+  const randomInt = getRandomInt(0, result.length - 1);
+  const randomElement = result[randomInt];
+  result[randomInt] = '..';
   const string = result.join(' ');
 
-  const askQuestion = `Question: ${string}`;
+  const question = `Question: ${string}`;
   const correctAnswer = String(randomElement);
-  return [correctAnswer, askQuestion];
+  return [correctAnswer, question];
 };
 
-const gameProgression = () => {
-  games(gameRules, round);
+const startGameProgression = () => {
+  getGames(gameRules, getRound);
 };
 
-export default gameProgression;
+export default startGameProgression;
